@@ -21,3 +21,9 @@ Before using Linky, you need to:
 While browsing, press Command+Shift+Y (Mac) or Ctrl+Shift+Y (Windows/Linux) to copy the current tab's URL to your clipboard.
 
 You can also click the Linky extension icon in your browser toolbar and then click the "Copy URL" button.
+
+### Special URL Handling
+
+Linky automatically removes query parameters for certain domains. When copying URLs from these domains, only the base URL and path will be copied (without query parameters).
+
+For example, if a URL has query parameters like `https://example.com/page/?param1=value1&param2=value2`, Linky will copy it as `https://example.com/page/`.
